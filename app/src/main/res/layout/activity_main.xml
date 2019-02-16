@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.leandro.pedrapapeloutesoura.MainActivity">
+
+    <TextView
+        android:layout_width="113dp"
+        android:layout_height="25dp"
+        android:text="Escolha do app"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02"
+        tools:layout_constraintRight_creator="1"
+        android:id="@+id/textView2"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintHorizontal_bias="0.524" />
+
+    <ImageView
+        android:id="@+id/imgaResultado"
+        android:layout_width="135dp"
+        android:layout_height="109dp"
+        android:layout_marginBottom="41dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textResultado"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:srcCompat="@drawable/padrao"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ecolha um aopção Abaixo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginTop="154dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imagePedra"
+        android:layout_width="70dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="10dp"
+        android:onClick="selecionarPedra"
+        app:layout_constraintBottom_toBottomOf="@+id/imagePapel"
+        app:layout_constraintRight_toLeftOf="@+id/imagePapel"
+        app:layout_constraintTop_toTopOf="@+id/imagePapel"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/pedra"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <ImageView
+        android:id="@+id/imagePapel"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="10dp"
+        android:onClick="selecionarPapel"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintLeft_toLeftOf="@+id/textResultado"
+        app:layout_constraintRight_toRightOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textResultado"
+        app:srcCompat="@drawable/papel"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <ImageView
+        android:id="@+id/imageTesoura"
+        android:layout_width="70dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="16dp"
+        android:onClick="selecionarTesoura"
+        app:layout_constraintBottom_toBottomOf="@+id/imagePapel"
+        app:layout_constraintLeft_toRightOf="@+id/imagePapel"
+        app:layout_constraintTop_toTopOf="@+id/imagePapel"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/tesoura"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+</android.support.constraint.ConstraintLayout>
